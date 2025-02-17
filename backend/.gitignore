@@ -1,0 +1,7 @@
+.env
+node_modules/
+firebase/
+.DS_Store
+chrome/
+frontend-web/
+frontend/

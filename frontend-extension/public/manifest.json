@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ReSolve.",
+    "version": "1.0.0",
+    "description": "A browser extension to keep track of unsolved problems on leetcode, codeforces and atcoder.",
+    "action": {
+      "default_popup": "index.html"
+    },
+    "permissions": ["offscreen"],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' https://apis.google.com https://www.gstatic.com https://www.googleapis.com https://securetoken.googleapis.com; object-src 'self'"
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+}

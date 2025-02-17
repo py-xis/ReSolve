@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",          // Allows relative imports to work
+      "paths": {
+        "@/*": ["./src/*"]    // Maps "@/..." to the "src" folder
+      },
+      "allowJs": true,         // Supports JavaScript files
+      "checkJs": false,        // Disables type-checking for JavaScript
+      "jsx": "react-jsx",      // Ensures proper JSX transformation
+      "noEmit": true           // Prevents generating output files
+    }
+  }
