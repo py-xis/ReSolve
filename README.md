@@ -1,7 +1,19 @@
 
 <p align="center">
-  <img src="./resolve-logo.svg" alt="ReSolve Logo" width="250"/>
+  <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="40" font-family="Arial, sans-serif" font-size="40" font-weight="bold">
+          <tspan fill="url(#blue-gradient)">Re</tspan>
+          <tspan fill="white" dx="-8">Solve.</tspan>
+      </text>
+      <defs>
+          <linearGradient id="blue-gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#2563eb"/>  
+              <stop offset="1" stop-color="#1e40af"/>  
+          </linearGradient>
+      </defs>
+  </svg>
 </p>
+
 <p align="center">
   A Platform to keep track of unsolved problems on LeetCode, CodeForces and AtCoder and upsolve.
 </p>
