@@ -2,6 +2,7 @@
 <p align="center">
   <img src="./resolve-logo.svg" alt="ReSolve Logo" width="250"/>
 </p>
+
 ## 📌 Features
 - ✅ **Extract problem details** from supported platforms.
 - 🔍 **Track unsolved problems** directly from the problem page.
