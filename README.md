@@ -3,8 +3,6 @@
   <span style="color: #2563eb;">Re</span><span style="color: #ffffff;">Solve.</span>
 </h1>
 
-
-<h1 align="center">ReSolve.</h1>
 ## 📌 Features
 - ✅ **Extract problem details** from supported platforms.
 - 🔍 **Track unsolved problems** directly from the problem page.
