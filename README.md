@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="screenshots/logo.png" alt="ReSolve Logo" width="250"/>
-</p>
-
 <h1 align="center">
   <span style="color: #2563eb;">Re</span><span style="color: #ffffff;">Solve.</span>
 </h1>
