@@ -5,7 +5,7 @@
 
 <p align="center">
 	<h2>
-		A Platform to keep track of unsolved problems on LeetCode, CodeForces and AtCoder and upsolve.
+		A platform to keep track of unsolved problems on LeetCode, CodeForces and AtCoder and upsolve.
 	</h2>
 </p>
 
