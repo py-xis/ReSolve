@@ -2,6 +2,9 @@
 <p align="center">
   <img src="./resolve-logo.svg" alt="ReSolve Logo" width="250"/>
 </p>
+<p align="center">
+  A Platform to keep track of unsolved problems on LeetCode, CodeForces and AtCoder and upsolve.
+</p>
 
 ## 📌 Features
 - ✅ **Extract problem details** from supported platforms.
