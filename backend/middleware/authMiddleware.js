@@ -30,6 +30,7 @@ dotenv.config();
 // }
 
 export async function authorizationMiddleware(req, res, next){
+    console.log(req.headers);
     const userId = req.headers.userid;
     
     if(!userId){

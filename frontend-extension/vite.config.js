@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import path from 'path'
 import { viteStaticCopy } from 'vite-plugin-static-copy';
-import path from "path";
 
+// https://vite.dev/config/
+// Vite configuration
 export default defineConfig({
   plugins: [
     react(),
@@ -11,7 +13,15 @@ export default defineConfig({
         {
           src: 'public/manifest.json',
           dest: '.',
-        }
+        },
+        {
+          src: 'public/content.js',
+          dest: '.',
+        },
+        {
+          src: 'public/background.js',
+          dest: '.',
+        },
       ],
     }),
   ],
@@ -22,9 +32,10 @@ export default defineConfig({
         main: './index.html',
       },
     },
-  },resolve: {
+  },
+  resolve: {
     alias: {
       "@": path.resolve(path.dirname(new URL(import.meta.url).pathname), "./src"),
     },
-  }
+  },
 });

@@ -1,15 +1,22 @@
-import { HashRouter, Routes, Route} from "react-router-dom"
-import LandingPage from "./Pages/LandingPage"
-import AuthPage from "./pages/AuthPage"
-export default function App(){
-    return (
-        <div>
-            <HashRouter>
-                <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/auth" element={<AuthPage/>} />
-                </Routes>
-            </HashRouter>
-        </div>
-    )
+import { HashRouter, Route, Routes } from 'react-router-dom'
+import './App.css'
+import HomePage from './pages/HomePage'
+import ProblemPage from './pages/ProblemPage'
+import ProfilePage from './pages/ProfilePage'
+
+function App() {
+
+  return (
+    <>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/problem" element={<ProblemPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+      </Routes>
+    </HashRouter>
+    </>
+  )
 }
+
+export default App

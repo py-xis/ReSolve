@@ -25,6 +25,11 @@ export default function SignInWithGoogle() {
 
       localStorage.setItem("uid", response.data.uid);
       localStorage.setItem("authToken", idToken);
+      // New
+      document.cookie = `firebaseAuthToken=${idToken}; path=/; secure; samesite=strict`;
+      document.cookie = `userId=${response.data.uid}; path=/; secure; samesite=strict`;
+      
+      // End new
       navigate("/dashboard");
 
     } catch (error) {

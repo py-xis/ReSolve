@@ -60,6 +60,7 @@ export default function Problems(){
                 difficulty={problem.difficulty}
                 link={problem.link}
                 id={problem.id}
+                solvedStatus={problem.revisited}
               />
             ))}
           </div>

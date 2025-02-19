@@ -129,14 +129,24 @@ export async function visitProblem(req, res) {
             return res.status(404).json({ message: "No problems found for this user." });
         }
 
+        // ✅ Ensure the problem exists before modifying it
+        if (!userProblem.problems.has(problemId)) {
+            return res.status(404).json({ message: "Problem not found in user's list." });
+        }
+
         // ✅ Update the revisited status to true
         userProblem.problems.set(problemId, true);
         await userProblem.save();
 
-        res.status(200).json({ message: "Problem marked as revisited." });
+        return res.status(200).json({ message: "Problem marked as revisited." });
+
     } catch (error) {
         console.error("Error in visitProblem:", error);
-        res.status(500).json({ message: "Error updating revisit status" });
+
+        // ✅ Ensure only one response is sent
+        if (!res.headersSent) {
+            return res.status(500).json({ message: "Error updating revisit status." });
+        }
     }
 }
 

@@ -12,7 +12,6 @@ export default function AvatarComponent() {
                 <AvatarImage src={user.profilePicture} />
                 <AvatarFallback>{user.name}</AvatarFallback>
             </Avatar>
-
         </div>
     );
 }

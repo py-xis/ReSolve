@@ -7,9 +7,9 @@ import axios from 'axios';
 
 
 // eslint-disable-next-line react/prop-types
-export default function ProblemCard({ id, platform, title, tags, difficulty, link}) {
+export default function ProblemCard({ id, platform, title, tags, difficulty, link, solvedStatus}) {
 
-  const [solved, setSolved] = useState(false);
+  const [solved, setSolved] = useState(solvedStatus);
 
   const solve = useCallback(async (problemId) => {
     try {
@@ -19,6 +19,7 @@ export default function ProblemCard({ id, platform, title, tags, difficulty, lin
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken")}`,
+            "userId" : localStorage.getItem("uid"),
             "Content-Type": "application/json",
           },
         }
@@ -38,6 +39,7 @@ export default function ProblemCard({ id, platform, title, tags, difficulty, lin
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken")}`,
+            "userId" : localStorage.getItem("uid"),
             "Content-Type": "application/json",
           },
         }

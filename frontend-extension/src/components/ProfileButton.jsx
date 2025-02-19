@@ -8,10 +8,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import AvatarComponent from "./Avatar";
 
-
 export default function ProfileButton() {
     const navigate = useNavigate();
-
     return (
         <DropdownMenu>
             <DropdownMenuTrigger>

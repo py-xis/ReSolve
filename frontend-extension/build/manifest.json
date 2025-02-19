@@ -1,13 +1,29 @@
 {
     "manifest_version": 3,
-    "name": "ReSolve.",
-    "version": "1.0.0",
-    "description": "A browser extension to keep track of unsolved problems on leetcode, codeforces and atcoder.",
-    "action": {
-      "default_popup": "index.html"
+    "name": "Resolve",
+    "version": "1.0",
+    "description": "A web extension to keep track of unsolved problems on Codeforces, LeetCode, and AtCoder.",
+    "permissions": ["activeTab", "scripting", "cookies", "storage"], 
+    "host_permissions": [
+        "https://leetcode.com/*",
+        "https://codeforces.com/*",
+        "https://atcoder.jp/*",
+        "http://localhost:5173/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
     },
-    "permissions": ["offscreen"],
-    "content_security_policy": {
-        "extension_pages": "script-src 'self' https://apis.google.com; object-src 'self'"
-      }
-  }
+    "action": {
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://leetcode.com/*",
+                "https://codeforces.com/*",
+                "https://atcoder.jp/*"
+            ],
+            "js": ["content.js"]
+        }
+    ]
+}

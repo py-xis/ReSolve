@@ -17,6 +17,7 @@ const addProblemSchema = zod.object({
 export function addProblemMiddleware(req, res, next){
     // Add your code here
     try{
+        console.log(req.body);
         const isValid = addProblemSchema.safeParse(req.body);
         if(isValid.success){
             req.data = isValid.data;
