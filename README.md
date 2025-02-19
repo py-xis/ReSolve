@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./resolve-logo.png" alt="ReSolve."></img> 
+  <img src="./resolve-logo.svg" alt="ReSolve."></img> 
 </p>
 
 <p align="center">
