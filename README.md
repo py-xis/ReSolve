@@ -1,9 +1,12 @@
-
-<img align="center" width="405" alt="Screenshot 2025-02-19 at 1 56 57 PM" src="https://github.com/user-attachments/assets/94bbfde8-8ae2-4c27-86af-5852e4155728" />
-
+<p align="center">
+  <img width="405" alt="Screenshot 2025-02-19 at 1 56 57 PM" 
+       src="https://github.com/user-attachments/assets/94bbfde8-8ae2-4c27-86af-5852e4155728" />
+</p>
 
 <p align="center">
-  A Platform to keep track of unsolved problems on LeetCode, CodeForces and AtCoder and upsolve.
+	<h2>
+		A Platform to keep track of unsolved problems on LeetCode, CodeForces and AtCoder and upsolve.
+	</h2>
 </p>
 
 ## 📌 Features
