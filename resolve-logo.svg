@@ -1,7 +1,7 @@
 <svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
     <text x="0" y="40" font-family="Arial, sans-serif" font-size="40" font-weight="bold">
         <tspan fill="url(#blue-gradient)">Re</tspan>
-        <tspan fill="white" dx="-11">Solve.</tspan> <!-- Shift "S" closer -->
+        <tspan fill="white" dx="-13">Solve.</tspan> <!-- Shift "S" closer -->
     </text>
     <defs>
         <linearGradient id="blue-gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse">
